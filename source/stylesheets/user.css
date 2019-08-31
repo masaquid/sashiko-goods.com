@@ -1,0 +1,130 @@
+/*
+ * Author: Masaki Moriyama
+ * URL: 
+ *
+ * Project Name:
+ * Version:
+ * URL:
+ *
+ * Theme-color: Masoho (#d57c6b)
+ */
+
+/* Font Awesome custom */
+.fa-hatena:before {
+    content: "B!";
+    font-family: Verdana;
+    font-weight: bold
+}
+ 
+/* #HELLO */
+#hello {
+	background-repeat: no-repeat;
+	background-image: url(../img/hello_bg.png);
+	background-size: cover;
+}
+#hello h1 {
+	color: #333333;
+	font-size: 50px;
+
+}
+#hello h2 {
+	color: #333333;
+	font-size: 30px;
+}
+
+
+/* Social icon */
+#social i {
+	/* font-size: 50px; */
+	padding-bottom: 10px;
+	color: #d57c6b;
+}
+
+/* navbar */
+.navbar-default .navbar-nav > .active,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	height: auto;
+	padding: 0;
+	color: #d57c6b; /* masoho */
+	background-color: #ffffff;
+}
+.navbar-default .navbar-nav .detail {
+	vertical-align: bottom;
+	font-size: 2em;
+}
+
+/* #masoho */
+#masoho {
+	background-color: #d57c6b;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	margin-bottom: 0px;
+}
+#masoho h3 {
+	color: white;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+#masoho p {
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+#masoho img {
+	width: 60%;
+}
+/* #plainwhite */
+#plainwhite {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 0px;
+}
+#plainwhite h3 {
+	color: #333;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+#plainwhite p {
+	color: #333;
+	font-weight: 400;
+	font-size: 20px;
+}
+#plainwhite img {
+	width: 60%;
+}
+
+/* .myshop */
+.myshop p.lead {
+	padding: 5px 0;
+}
+.myshop img {
+	margin: 5px;
+	height: 50px;
+}
+
+
+/* Footer */
+#f {
+	padding-top: 20px;
+	background-color: #d57c6b;
+}
+#f p {
+	color: white;
+	text-align: right;
+	font-weight: normal;
+}
+#f p a {
+	color: white;
+	text-align: right;
+	font-weight: bold;
+	text-decoration: italic;
+}
+
+
+
+
+
+
+
