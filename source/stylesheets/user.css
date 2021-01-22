@@ -1,6 +1,6 @@
 /*
  * Author: Masaki Moriyama
- * URL: 
+ * URL:
  *
  * Project Name:
  * Version:
@@ -15,11 +15,11 @@
     font-family: Verdana;
     font-weight: bold
 }
- 
+
 /* #HELLO */
 #hello {
 	background-repeat: no-repeat;
-	background-image: url(../img/hello_bg.png);
+	background-image: url(../images/hello_bg.png);
 	background-size: cover;
 }
 #hello h1 {
@@ -121,10 +121,3 @@
 	font-weight: bold;
 	text-decoration: italic;
 }
-
-
-
-
-
-
-
