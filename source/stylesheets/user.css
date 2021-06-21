@@ -19,7 +19,7 @@
 /* #HELLO */
 #hello {
 	background-repeat: no-repeat;
-	background-image: url(../images/hello_bg.png);
+	background-image: url(../images/hello_bg.jpg);
 	background-size: cover;
 }
 #hello h1 {
