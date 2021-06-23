@@ -112,12 +112,12 @@
 }
 #f p {
 	color: white;
-	text-align: right;
+	text-align: center;
 	font-weight: normal;
 }
 #f p a {
 	color: white;
-	text-align: right;
+	text-align: center;
 	font-weight: bold;
 	text-decoration: italic;
 }
