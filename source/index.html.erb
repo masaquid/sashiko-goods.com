@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <img src="images/logo.png">
+        <%= webp_helper "logo.png" , "hoge" %>
       </a>
     </div>
     <div class="navbar-collapse collapse">
@@ -42,7 +42,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 centered">
-        <img src="images/tips_1.png" alt="三河木綿の歴史（刺子生地とは）">
+        <%= webp_helper "tips_1.png" , "三河木綿の歴史（刺子生地とは）" %>
       </div>
       <div class="col-lg-7 centered">
         <h3>三河木綿の歴史
@@ -62,7 +62,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 centered">
-        <img src="images/tips_2.png" alt="消防反転としての三河木綿生地 刺子生地の特徴について">
+        <%= webp_helper "tips_2.png" , "消防反転としての三河木綿生地 刺子生地の特徴について" %>
       </div>
       <div class="col-lg-7 centered">
         <h3>消防半纏としての三河木綿生地
@@ -84,7 +84,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 centered">
-        <img src="images/tips_3.png" alt="三河木綿（刺子生地）で作られた、刺し子小物のご紹介">
+        <%= webp_helper "tips_3.png" , "三河木綿（刺子生地）で作られた、刺し子小物のご紹介" %>
       </div>
       <div class="col-lg-7 centered">
         <h3>三河木綿を使用した刺し子生地小物
@@ -104,24 +104,24 @@
     <h3>そんなこだわりの刺し子生地を使用した小物をご用意しました。
     </h3>
     <div class="col-lg-4 col-md-4">
-      <img src="images/sashiko/001.png" alt="刺し子小物 印鑑ケース">
+      <%= webp_helper "001.png" , "刺し子小物 印鑑ケース" %>
     </div>
     <div class="col-lg-4 col-md-4">
-      <img src="images/sashiko/003.png" alt="刺し子小物 ペンケース">
+      <%= webp_helper "003.png" , "刺し子小物 ペンケース" %>
     </div>
     <div class="col-lg-4 col-md-4">
-      <img src="images/sashiko/004.png" alt="刺し子小物 メガネケース">
+      <%= webp_helper "004.png" , "刺し子小物 メガネケース" %>
     </div>
   </div>
   <div class="row centered mt grid">
     <div class="col-lg-4 col-md-4">
-      <img src="images/sashiko/009.png" alt="刺し子織り 巾着型バッグ">
+      <%= webp_helper "009.png" , "刺し子織り 巾着型バッグ" %>
     </div>
     <div class="col-lg-4 col-md-4">
-      <img src="images/sashiko/010.png" alt="和風・和柄 刺し子小物 風呂敷">
+      <%= webp_helper "010.png" , "和風・和柄 刺し子小物 風呂敷" %>
     </div>
     <div class="col-lg-4 col-md-4">
-      <img src="images/sashiko/013.png" alt="和風・和柄 刺し子生地 肩掛けボディバッグ">
+      <%= webp_helper "013.png" , "和風・和柄 刺し子生地 肩掛けボディバッグ" %>
     </div>
   </div>
   <div class="centered myshop">
@@ -135,12 +135,17 @@
     <br />
     <p class="lead">もちろん、Amazon.co.jpやYahoo!ショッピングでも販売しております
     </p>
-    <a
-      href="http://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=me%3DA8D87RPQXGNAR&field-keywords=%E5%88%BA%E3%81%97%E5%AD%90">
-      <img src="images/shop/amazon.png" alt="Amazon.co.jp デライトベース販売サイト" style="height: 50px;">
+    <a href="http://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=me%3DA8D87RPQXGNAR&field-keywords=%E5%88%BA%E3%81%97%E5%AD%90">
+      <picture style="height: 50px;">
+        <source type="image/webp" srcset="images/amazon.webp" alt="Amazon.co.jp デライトベース販売サイト">
+        <img src="images/amazon.png" alt="Amazon.co.jp デライトベース販売サイト">
+      </picture>
     </a>
     <a href="http://store.shopping.yahoo.co.jp/delight-base/search.html?p=%BB%C9%A4%B7%BB%D2">
-      <img src="images/shop/yahoo.png" alt="Yahoo!ショッピング デライトベース販売サイト" style="height: 45px;">
+      <picture style="height: 50px;">
+        <source type="image/webp" srcset="images/yahoo.webp" alt="Yahoo!ショッピング デライトベース販売サイト">
+        <img src="images/yahoo.png" alt="Yahoo!ショッピング デライトベース販売サイト">
+      </picture>
     </a>
   </div>
 </div>
@@ -152,10 +157,16 @@
     <h3 style="margin: 30px 0 20px;">その他、OEM製作やオリジナル商品の製造・販売も承っております
     </h3>
     <div class="col-lg-6 col-md-6">
-      <img src="images/sashiko/ORG1.png" style="opacity:1" alt="刺し子生地と帆前掛け生地を使用したミニ半纏・OEMグッズ">
+      <picture style="opacity:1;">
+        <source type="image/webp" srcset="images/ORG1.webp" alt="刺し子生地と帆前掛け生地を使用したミニ半纏１・OEMグッズ">
+        <img src="images/ORG1.png" alt="刺し子生地と帆前掛け生地を使用したミニ半纏・OEMグッズ１">
+      </picture>
     </div>
     <div class="col-lg-6 col-md-6">
-      <img src="images/sashiko/ORG2.png" style="opacity:1" alt="刺し子生地と帆前掛け生地を使用したミニ半纏・OEMグッズ">
+      <picture style="opacity:1;">
+        <source type="image/webp" srcset="images/ORG2.webp" alt="刺し子生地と帆前掛け生地を使用したミニ半纏２・OEMグッズ">
+        <img src="images/ORG2.png" alt="刺し子生地と帆前掛け生地を使用したミニ半纏２・OEMグッズ">
+      </picture>
     </div>
   </div>
   <div id="social">
@@ -167,8 +178,7 @@
           </h3>
         <div class="col-lg-8 col-lg-offset-2">
           <div class="col-md-2 col-xs-4">
-            <a
-              href="http://twitter.com/share?url=https://sashiko-goods.com/&text=三河地方の三河木綿を使った、厚手で上部な刺し子生地小物を見たよ！https://sashiko-goods.com/">
+            <a href="http://twitter.com/share?url=https://sashiko-goods.com/&text=三河地方の三河木綿を使った、厚手で上部な刺し子生地小物を見たよ！https://sashiko-goods.com/">
               <i class="fa fa-twitter"></i>
             </a>
           </div>
@@ -178,8 +188,7 @@
             </a>
           </div>
           <div class="col-md-2 col-xs-4">
-            <a
-              href="http://line.me/R/msg/text/?%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%81%AE%E4%B8%89%E6%B2%B3%E6%9C%A8%E7%B6%BF%20%E5%88%BA%E3%81%97%E5%AD%90%E7%94%9F%E5%9C%B0%E3%82%B0%E3%83%83%E3%82%BA">
+            <a　href="http://line.me/R/msg/text/?%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%81%AE%E4%B8%89%E6%B2%B3%E6%9C%A8%E7%B6%BF%20%E5%88%BA%E3%81%97%E5%AD%90%E7%94%9F%E5%9C%B0%E3%82%B0%E3%83%83%E3%82%BA">
               <i class="icon-line"></i>
             </a>
           </div>
@@ -189,8 +198,7 @@
             </a>
           </div>
           <div class="col-md-2 col-xs-4">
-            <a
-              href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://www.tumblr.com/widgets/share/tool',l=d.location,e=encodeURIComponent,p='?url='+e(l.href) +'&title='+e(d.title) +'&selection='+e(s) +'&shareSource=bookmarklet',u=f+p,sw=0,sd;try{sd =d.createElement('div');sd.style.height ='100px';sd.style.width='100px';sd.style.overflow='scroll';d.body.appendChild(sd);sw=sd.offsetWidth-sd.clientWidth;d.body.removeChild(sd);}catch(z){};try{if(!/^(.*.)?tumblr[^.]*$/.test(l.host))throw(0);tstbklt();}catch(z){a =function(){if(!w.open(u,'_blank','toolbar=0,resizable=0,status=1,scrollbars=1,width='+(540+sw)+',height=600'))l.href=u;};setTimeout(a,10);}void(0)">
+            <a href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://www.tumblr.com/widgets/share/tool',l=d.location,e=encodeURIComponent,p='?url='+e(l.href) +'&title='+e(d.title) +'&selection='+e(s) +'&shareSource=bookmarklet',u=f+p,sw=0,sd;try{sd =d.createElement('div');sd.style.height ='100px';sd.style.width='100px';sd.style.overflow='scroll';d.body.appendChild(sd);sw=sd.offsetWidth-sd.clientWidth;d.body.removeChild(sd);}catch(z){};try{if(!/^(.*.)?tumblr[^.]*$/.test(l.host))throw(0);tstbklt();}catch(z){a =function(){if(!w.open(u,'_blank','toolbar=0,resizable=0,status=1,scrollbars=1,width='+(540+sw)+',height=600'))l.href=u;};setTimeout(a,10);}void(0)">
               <i class="fa fa-tumblr"></i>
             </a>
           </div>
