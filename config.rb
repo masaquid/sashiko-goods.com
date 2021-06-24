@@ -45,5 +45,17 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
+#
 # Customize
+#
+helpers do
+  def webp_helper(file, alt)
+    result = ""
+    result << %{<picture>}
+    result << %{<source type="image/webp" srcset="images/#{File.basename(file, ".*")}.webp" alt="#{alt}">}
+    result << image_tag("#{file}", alt: "#{alt}")
+    result << "</picture>"
+  end
+end
+
 activate :livereload
